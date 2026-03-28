@@ -1,9 +1,11 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+// ================= AUTH =================
 
 export async function getCurrentUser() {
   const {
@@ -33,6 +35,8 @@ export async function signOut() {
   return { error };
 }
 
+// ================= USER PROFILE =================
+
 export async function getUserProfile(userId) {
   const { data, error } = await supabase
     .from("financial_profiles")
@@ -50,6 +54,8 @@ export async function upsertUserProfile(profile) {
     .single();
   return { data, error };
 }
+
+// ================= AI REPORTS =================
 
 export async function saveAIReport(userId, reportType, reportData) {
   const { data, error } = await supabase

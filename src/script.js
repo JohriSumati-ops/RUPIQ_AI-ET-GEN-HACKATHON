@@ -323,6 +323,18 @@ document.addEventListener("DOMContentLoaded", function () {
     if (n >= 1000) return "\u20B9" + (n / 1000).toFixed(0) + "K";
     return "\u20B9" + n;
   }
+  const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("RUPIQ AI Backend Running 🚀");
+});
+
+const port = process.env.PORT || 10000;
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
 
   /* GROQ CONFIG */
   var GROQ_KEY = "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";
