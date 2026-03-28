@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RUPIQ AI - Your AI Financial Advisor
 
 AI-powered financial planning built for India. From health score to FIRE planning, tax optimization to smart investing.
@@ -134,3 +135,6 @@ This project was created for educational and personal finance planning purposes.
 ---
 
 Built with GROQ AI & Supabase • Designed for India
+=======
+# RUPIQ_AI-ET-GEN-HACKATHON
+>>>>>>> ddead272ac15800a2890ffbfce78a0aceb39e4cf
