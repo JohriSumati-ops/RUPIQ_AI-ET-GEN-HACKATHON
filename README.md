@@ -1,140 +1,441 @@
-<<<<<<< HEAD
-# RUPIQ AI - Your AI Financial Advisor
+# 💰 RUPIQ AI
 
-AI-powered financial planning built for India. From health score to FIRE planning, tax optimization to smart investing.
+## AI-Powered Personal Finance Intelligence Platform for India
 
-## Quick Start
+> Making financial planning simpler, smarter, and more personalized.
 
-### 1. Install Dependencies
+Financial decisions are complex.
 
-```bash
-npm install
-```
+People struggle with:
 
-### 2. Run Development Server
+- Understanding their financial health
+- Planning long-term goals
+- Optimizing taxes
+- Choosing suitable investment strategies
 
-```bash
-npm run dev
-```
+Most financial tools provide generic calculators.
 
-The app will open at `http://localhost:5173`
+RUPIQ AI takes a different approach.
 
-### 3. Build for Production
+It combines **Generative AI, personalized analysis, and financial intelligence** to help users understand their current situation and make better decisions.
 
-```bash
-npm run build
-```
-
-## Features
-
-### 4 AI-Powered Financial Tools
-
-1. **Money Health Score** - Get a 0-100 financial health score with personalized action plan
-2. **FIRE Planner** - Calculate your Financial Independence, Retire Early roadmap
-3. **Tax Optimizer** - Maximize tax savings with smart strategies (Indian tax laws)
-4. **Investment Guidance** - Custom portfolio strategy with specific fund recommendations
-
-## Tech Stack
-
-- **Frontend**: Vanilla JavaScript (ES6+), HTML5, CSS3
-- **AI**: GROQ (Llama 3.1-8b-instant model)
-- **Database**: Supabase (PostgreSQL)
-- **Auth**: Supabase Authentication
-- **Build**: Vite
-- **Styling**: Custom CSS with CSS Variables (Dark/Light theme)
-
-## Project Structure
-
-```
-rupiq-ai/
-├── index.html           # Main HTML file
-├── src/
-│   ├── script.js       # All JavaScript logic + Supabase auth
-│   ├── style.css       # All styles
-│   └── supabase.js     # Supabase client setup
-├── .env                 # Environment variables (Supabase credentials)
-└── supabase/
-    └── migrations/      # Database schema
-```
-
-## Environment Variables
-
-Already configured in `.env`:
-
-- `VITE_SUPABASE_URL` - Your Supabase project URL
-- `VITE_SUPABASE_ANON_KEY` - Your Supabase anonymous key
-
-## Database
-
-The app uses Supabase with two main tables:
-
-1. **financial_profiles** - Stores user financial data
-2. **ai_reports** - Stores AI-generated reports
-
-Row Level Security (RLS) is enabled on all tables.
-
-## Authentication
-
-- Email/password authentication via Supabase
-- Session persistence across page reloads
-- Secure user management
-
-## How to Use
-
-1. **Sign Up** - Create a free account
-2. **Choose a Tool** - Select from 4 financial analysis tools
-3. **Enter Your Data** - Income, expenses, age, and goals
-4. **Get AI Analysis** - Receive personalized financial advice in seconds
-5. **Take Action** - Follow the actionable recommendations
-
-## Development
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-### Code Organization
-
-- All CSS is in `src/style.css` (organized by sections)
-- All JavaScript is in `src/script.js` (with Supabase integration)
-- Supabase utilities are in `src/supabase.js`
-- HTML structure is clean and semantic in `index.html`
-
-## Security Notes
-
-- The GROQ API key is currently in the frontend for demo purposes
-- For production, move AI calls to a backend/Edge Function
-- Supabase handles all authentication and data security
-- RLS policies ensure users can only access their own data
-
-## Indian Financial Context
-
-The AI is trained with Indian financial knowledge:
-
-- FY2024-25 tax slabs
-- 80C, 80D, HRA deductions
-- PPF, NPS, ELSS, SGB instruments
-- SIP, mutual fund strategies
-- 4% rule for FIRE calculations
-
-## Browser Support
-
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- ES6+ JavaScript support required
-- CSS Grid and Flexbox support required
-
-## License
-
-This project was created for educational and personal finance planning purposes.
-
-**Disclaimer**: Not SEBI-registered financial advice. For informational purposes only.
+Built for the **Economic Times GenAI Hackathon**, RUPIQ AI explores the future of intelligent financial assistance.
 
 ---
 
-Built with GROQ AI & Supabase • Designed for India
-=======
-# RUPIQ_AI-ET-GEN-HACKATHON
->>>>>>> ddead272ac15800a2890ffbfce78a0aceb39e4cf
+# 🎯 Problem Statement
+
+Personal finance management remains difficult because:
+
+- Financial information is overwhelming
+- Advice is often generic
+- Users lack personalized guidance
+- Tax planning requires expertise
+- Long-term planning is difficult without proper tools
+
+Users need more than calculators.
+
+They need an intelligent financial companion that understands their goals.
+
+---
+
+# 💡 Solution Overview
+
+RUPIQ AI is an AI-powered financial advisor designed for Indian users.
+
+The platform analyzes user financial information and generates personalized insights across:
+
+- Financial health
+- Wealth planning
+- Tax optimization
+- Investment strategy
+- Financial independence planning
+
+Instead of simply showing numbers, RUPIQ AI explains:
+
+- Where the user currently stands
+- What improvements can be made
+- What actions can help achieve financial goals
+
+---
+
+# 🚀 Core Features
+
+# 1. 📊 Money Health Score
+
+A personalized financial assessment system.
+
+The platform evaluates:
+
+- Income patterns
+- Expense behavior
+- Savings ability
+- Financial goals
+
+Users receive:
+
+- Financial score
+- Improvement areas
+- Action recommendations
+
+---
+
+# 2. 🔥 FIRE Planner
+
+Financial Independence, Retire Early planning assistant.
+
+Helps users understand:
+
+- Required investment targets
+- Retirement timeline
+- Savings strategy
+- Long-term wealth goals
+
+The system converts financial goals into actionable plans.
+
+---
+
+# 3. 🧾 AI Tax Optimizer
+
+Designed around Indian taxation concepts.
+
+Provides guidance related to:
+
+- Tax-saving opportunities
+- Investment decisions
+- Available deductions
+- Financial planning strategies
+
+Supports concepts such as:
+
+- 80C deductions
+- 80D deductions
+- HRA benefits
+- NPS planning
+- ELSS investments
+
+---
+
+# 4. 📈 Investment Guidance
+
+Provides personalized investment insights based on:
+
+- User goals
+- Risk preferences
+- Financial situation
+
+The platform helps users understand:
+
+- Possible investment approaches
+- Portfolio considerations
+- Wealth-building strategies
+
+---
+
+# 5. 🤖 AI Financial Assistant
+
+Powered by Generative AI.
+
+Users can interact with an intelligent assistant for:
+
+- Financial explanations
+- Personalized suggestions
+- Goal-based planning
+- Decision support
+
+The assistant converts complex financial concepts into understandable guidance.
+
+---
+
+# 🧠 AI Intelligence Layer
+
+RUPIQ AI combines:
+
+- Large Language Models
+- Financial knowledge
+- User-specific context
+- Personalized reasoning
+
+Workflow:
+
+```
+User Financial Information
+            |
+            ↓
+Financial Analysis Engine
+            |
+            ↓
+AI Reasoning Layer
+            |
+            ↓
+Personalized Financial Insights
+            |
+            ↓
+Action Recommendations
+```
+
+---
+
+# 🌍 Real-World Applications
+
+RUPIQ AI can support:
+
+## Individual Users
+
+- Personal financial planning
+- Investment awareness
+- Tax understanding
+- Wealth management
+
+## FinTech Platforms
+
+- AI financial assistants
+- Customer engagement systems
+- Financial education products
+
+## Banking Applications
+
+- Intelligent customer support
+- Financial guidance tools
+- Personalized recommendations
+
+## Financial Literacy Platforms
+
+- Student finance education
+- Beginner investment guidance
+
+---
+
+# ⚙️ Engineering Highlights
+
+## Full-Stack Application Development
+
+Built with:
+
+- Frontend interface
+- Authentication system
+- Database integration
+- AI-powered workflows
+
+---
+
+## AI Engineering
+
+Implemented:
+
+- LLM-powered responses
+- Context-aware financial assistance
+- Personalized recommendations
+
+---
+
+## Backend & Data Management
+
+Includes:
+
+- User authentication
+- Financial profile storage
+- AI report generation
+- Secure database handling
+
+---
+
+# 🏗️ System Architecture
+
+```
+User
+ |
+ ↓
+Frontend Application
+ |
+ ↓
+Authentication Layer
+ |
+ ↓
+Financial Data Processing
+ |
+ ↓
+AI Intelligence Layer
+ |
+ ↓
+Personalized Reports & Recommendations
+ |
+ ↓
+Database Storage
+```
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+- Vite
+
+## AI
+
+- Groq LLM API
+- Generative AI workflows
+
+## Backend / Database
+
+- Supabase
+- PostgreSQL
+- Authentication
+
+## Deployment
+
+- Vercel
+
+---
+
+# 📁 Project Structure
+
+```
+rupiq-ai/
+
+├── index.html
+
+├── src/
+│
+├── script.js
+│
+├── style.css
+│
+├── supabase.js
+│
+├── supabase/
+│   └── migrations/
+
+├── .env
+
+└── README.md
+```
+
+---
+
+# 🔐 Security Considerations
+
+Current implementation:
+
+- Supabase authentication
+- Row Level Security policies
+- User-specific financial data separation
+
+Production improvements:
+
+- Backend AI proxy layer
+- Enhanced encryption
+- Financial compliance review
+- Secure API management
+
+---
+
+# 📸 Product Walkthrough
+
+## Dashboard
+
+Financial intelligence overview.
+
+---
+
+## Money Health Analysis
+
+Personalized financial assessment.
+
+---
+
+## FIRE Planning
+
+Long-term wealth planning assistant.
+
+---
+
+## Tax Optimization
+
+AI-powered tax planning insights.
+
+---
+
+## Investment Guidance
+
+Goal-based financial recommendations.
+
+---
+
+# 📈 Impact
+
+RUPIQ AI enables users to:
+
+✅ Understand financial health  
+✅ Plan future goals  
+✅ Improve financial awareness  
+✅ Explore smarter decisions  
+
+The platform demonstrates how Generative AI can make financial guidance more accessible.
+
+---
+
+# 🔮 Future Roadmap
+
+## Advanced AI Financial Coach
+
+- Conversational financial planning
+- Long-term memory
+- Goal tracking
+
+## Better Personalization
+
+- Spending pattern analysis
+- Financial forecasting
+- Behaviour-based recommendations
+
+## Platform Expansion
+
+- Mobile application
+- Financial dashboards
+- Banking integrations
+
+## Responsible Finance AI
+
+- Transparent recommendations
+- Risk awareness
+- Human expert integration
+
+---
+
+# 🏆 Hackathon
+
+Built for:
+
+## Economic Times GenAI Hackathon
+
+Focused on exploring how Generative AI can solve real-world financial challenges.
+
+---
+
+# 🤝 Collaboration
+
+Interested in building:
+
+- FinTech AI products
+- Intelligent financial assistants
+- Generative AI applications
+- AI-powered SaaS platforms
+
+Feel free to connect.
+
+---
+
+# ⭐ Final Vision
+
+> Financial intelligence should not be limited to experts.
+
+RUPIQ AI aims to make personalized financial guidance accessible through the power of Artificial Intelligence.
+
+Smarter decisions.
+Better planning.
+A more financially aware future.
